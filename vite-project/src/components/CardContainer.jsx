@@ -15,7 +15,6 @@ function CardContainer({ cards }) {
     url={card.url}
     description={card.description}
     buttonTitle={card.buttonTitle}
-   
     /> 
     ))}
   </section>

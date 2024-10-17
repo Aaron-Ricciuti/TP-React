@@ -12,9 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route } from 'react-router-dom';
 import Cajonde12Container from './components/Cajonde12Container';
 
-
-
-
 function App()  {
   const navLinks = [
     { label: 'Inicio', href: '#start' },

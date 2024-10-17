@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import styles from "../../public/css/cajonde12.module.css";
 import Cajonde12 from './Cajonde12';
 
-
-function Cajonde12Container({ products }) {
+function Cajonde12Container( {products} ) {
+    console.log('products:', products);
   return (
     <section className={styles['product-container']}>
             {products.map((product, index) => (
@@ -24,19 +24,19 @@ function Cajonde12Container({ products }) {
 Cajonde12Container.propTypes = {
     products: PropTypes.arrayOf(
         PropTypes.shape({
-            title: PropTypes.string.isRequired,
-            price: PropTypes.string.isRequired,
+            title: PropTypes.string,
+            price: PropTypes.string,
             description: PropTypes.arrayOf(PropTypes.string).isRequired,
             additionalInfo: PropTypes.shape({
-                dimensions: PropTypes.arrayOf(PropTypes.string).isRequired,
-                additional: PropTypes.string.isRequired,
-            }).isRequired,
+                dimensions: PropTypes.arrayOf(PropTypes.string),
+                additional: PropTypes.string,
+            }),
             socialLinks: PropTypes.arrayOf(
                 PropTypes.shape({
-                    url: PropTypes.string.isRequired,
-                    icon: PropTypes.string.isRequired,
+                    url: PropTypes.string,
+                    icon: PropTypes.string,
                 })
-            ).isRequired,
+            ),
         })
     ).isRequired,
 };

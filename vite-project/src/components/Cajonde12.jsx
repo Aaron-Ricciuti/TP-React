@@ -8,9 +8,6 @@ import styles from "../../public/css/cajonde12.module.css";
 
 function Cajonde12({ title, price, description, additionalInfo, socialLinks }) {
   
-  console.log('Cajonde12 Props:', { title, price, description, additionalInfo, socialLinks });
- 
-  
   const slides = [
         {
           image: "../public/img/cajon12_1.jpg",
